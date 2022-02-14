@@ -13,6 +13,7 @@ import { MonacoEditorModule } from 'ngx-monaco-editor';
 
 // routes
 import { appRoutes } from './app.route';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { appRoutes } from './app.route';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CompareEditorComponent
+    CompareEditorComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
