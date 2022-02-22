@@ -110,13 +110,13 @@ export class CompareEditorComponent implements OnInit {
       // Accepted values: 'auto', 'visible', 'hidden'.
       // Defaults to 'auto'
       horizontal: 'hidden'
-    }
+    },
   };
   // compare, output
   diffOptions = {
     theme: 'vs',
     language: 'plaintext',
-    readOnly: true,
+    readOnly: false,
     renderSideBySide: true
   };
   originalModel: DiffEditorModel = {
