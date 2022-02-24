@@ -4,7 +4,7 @@
   </div>
   <hr />
   <div class="row">
-    <div class="col-md-11">
+    <div class="col-md-9">
       <form class="form-inline " role="form">
         <label for="lang" class="mb-2 mr-sm-2">Language:</label>
         <select
@@ -31,18 +31,38 @@
           }}</option>
         </select>
         <div class="form-check mb-2 mr-sm-2">
-          <label class="form-check-label">
+          <!-- <label class="form-check-label">
             <input
               class="form-check-input "
               type="checkbox"
               (change)="onChangeInline($event.target.checked)"
             />
             Inline Diff
-          </label>
+          </label> -->
         </div>
+        
       </form>
     </div>
-    <div class="col-md-1">
+    
+
+    <div class="col-md-3">
+      <button
+      *ngIf="isCompared"
+       style="margin-right: 10px;"
+        type="button m-1"
+        class="btn btn-info"
+        (click)="onPreviousDiff()"
+      >
+        Previous Diff
+      </button>
+      <button
+      *ngIf="isCompared"
+        type="button ms-1"
+        class="btn btn-info"
+        (click)="onNextDiff()"
+      >
+        Next Diff
+      </button>
       <button
         type="button"
         class="btn btn-danger float-md-right"
@@ -52,14 +72,15 @@
       </button>
     </div>
   </div>
-  <div *ngIf="isCompared" class="row">
-    <div class="col-md-12 editor editor-size">
-      <ngx-monaco-diff-editor
+  <div  class="row">
+    <div class="col-md-12 editor editor-size"  id="container-parent">
+      <div id="container" class="editor-size" style="display: {{containerDisplay}}; height: 400px; width: 100%; margin-bottom: 40px;"></div>
+      <!-- <ngx-monaco-diff-editor
         id="diffeditor"
         [options]="diffOptions"
         [originalModel]="originalModel"
         [modifiedModel]="modifiedModel"
-      ></ngx-monaco-diff-editor>
+      ></ngx-monaco-diff-editor> -->
     </div>
   </div>
   <div class="row">
