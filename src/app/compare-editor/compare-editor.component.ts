@@ -192,7 +192,7 @@ export class CompareEditorComponent implements OnInit {
 
     this.diffEditor.layout({
       width: document.getElementById('container-parent').clientWidth,
-      height: 400
+      height: 700
     })
     this.navi = monaco.editor.createDiffNavigator(this.diffEditor, {
       followsCaret: true, // resets the navigator state when the user selects something in the editor
