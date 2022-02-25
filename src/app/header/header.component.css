@@ -10,3 +10,13 @@
   padding: 2px 8px;
   font-weight: bold;
 }
+
+.navbar-parent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-issue{
+  padding-right: 16px;
+}

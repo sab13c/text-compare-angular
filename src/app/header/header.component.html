@@ -1,5 +1,8 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+<div class="navbar-parent navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar" >
   <!-- Links -->
+
   <ul class="navbar-nav">
     <li [ngClass]="{ 'nav-item': true, active: router.url === '/' }">
       <a class="nav-link nav-home" routerLink="/">Free Text Compare</a>
@@ -9,4 +12,7 @@
     {{ envName }}
   </span>
 </nav>
+  <span class="navbar-text report-issue">Report issues @ <a href="mailto:FreeTextCompare@gmail.com">FreeTextCompare@gmail.com</a></span>
+</div>
 <br />
+
