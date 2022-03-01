@@ -95,6 +95,7 @@ export class CompareEditorComponent implements OnInit {
   inputOptions = {
     theme: 'vs',
     language: 'plaintext',
+    quickSuggestions: false,
     minimap: {
       enabled: false
     },
