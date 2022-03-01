@@ -118,6 +118,7 @@ export class CompareEditorComponent implements OnInit {
   };
   // compare, output
   diffOptions = {
+    quickSuggestions: false,
     theme: 'vs',
     language: 'plaintext',
     readOnly: false,
