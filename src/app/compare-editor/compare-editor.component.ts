@@ -123,7 +123,8 @@ export class CompareEditorComponent implements OnInit {
     theme: 'vs',
     language: 'plaintext',
     readOnly: false,
-    renderSideBySide: true
+    renderSideBySide: true,
+    originalEditable: true
   };
   // originalModel: DiffEditorModel = {
   //   code: '',
