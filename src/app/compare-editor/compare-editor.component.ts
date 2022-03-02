@@ -188,7 +188,7 @@ export class CompareEditorComponent implements OnInit {
     );
 
 
-    this.diffEditor = monaco.editor.createDiffEditor(document.getElementById('container'));
+    this.diffEditor = monaco.editor.createDiffEditor(document.getElementById('container'), this.diffOptions);
     this.diffEditor.setModel({
       original: this.originalModel,
       modified: this.modifiedModel
